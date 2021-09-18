@@ -7,11 +7,9 @@
             "server": "nodemon index.js",
             "start": "node index.js"
       },
-      
       "keywords": [],
       "author": "",
       "license": "ISC",
-
       "dependencies": {
             "bcryptjs": "^2.4.3",
             "connect-session-knex": "^2.1.0",
