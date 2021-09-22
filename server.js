@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const express = require("express")
 const helmet = require("helmet")
 const cors = require("cors")
@@ -8,17 +7,6 @@ const usersRouter = require("./routers/users.js")
 const plantsRouter = require("./routers/plants-router.js")
 const speciesRouter = require("./routers/species-router.js")
 const db = require("./data/config")
-=======
-const express = require('express');
-const helmet = require('helmet');
-const cors = require('cors');
-const session = require('express-session');
-const KnexSessionStore = require('connect-session-knex')(session);
-const usersRouter = require('./routers/users.js');
-const plantsRouter = require('./routers/plants-router.js');
-const speciesRouter = require('./routers/species-router.js');
-const db = require('./data/config');
->>>>>>> 3553cd332f929d470051a393ba1cfd587629a063
 
 const server = express();
 
