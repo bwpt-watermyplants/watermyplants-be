@@ -1,5 +1,4 @@
 const db = require('../data/config');
-const { get } = require('../routers/plants-router');
 
 async function add(user) {
   const [id] = await db('users').insert(user);
