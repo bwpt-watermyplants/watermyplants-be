@@ -14,9 +14,16 @@
             "create": "knex migrate:make",
             "heroku-postbuild": "npm i && npm run build"
       },
+      "repository": {
+            "type": "git",
+            "url": "https://github.com/bwpt-watermyplants/watermyplants-be.git"
+          },
       "keywords": [],
       "author": "",
       "license": "ISC",
+      "bugs": {
+            "url": "https://github.com/bwpt-watermyplants/watermyplants-be/issues"
+      },
       "dependencies": {
             "bcryptjs": "^2.4.3",
             "connect-session-knex": "^2.1.0",
