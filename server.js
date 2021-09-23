@@ -25,6 +25,8 @@ server.use(
   })
 );
 
+require("dotenv").config()
+
 server.use('/api', usersRouter);
 server.use('/api', plantsRouter);
 server.use('/api', speciesRouter);
