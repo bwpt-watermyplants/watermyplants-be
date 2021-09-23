@@ -7,7 +7,7 @@ const usersRouter = require("./routers/users.js")
 const plantsRouter = require("./routers/plants-router.js")
 const speciesRouter = require("./routers/species-router.js")
 const db = require("./data/config")
-
+require("dotenv").config()
 const server = express();
 
 server.use(helmet());
@@ -25,7 +25,7 @@ server.use(
   })
 );
 
-require("dotenv").config()
+let host = process.env.DATABASE_URL
 
 server.use('/api', usersRouter);
 server.use('/api', plantsRouter);

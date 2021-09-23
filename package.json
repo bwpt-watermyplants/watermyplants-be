@@ -11,7 +11,8 @@
             "rollback": "knex migrate:rollback",
             "seed": "knex seed:run",
             "migrate": "knex migrate:latest",
-            "create": "knex migrate:make"
+            "create": "knex migrate:make",
+            "heroku-postbuild": "npm i && npm run build"
       },
       "keywords": [],
       "author": "",
