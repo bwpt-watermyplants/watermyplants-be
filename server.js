@@ -25,7 +25,7 @@ server.use(
   })
 );
 
-let host = process.env.DATABASE_URL
+
 
 server.use('/api', usersRouter);
 server.use('/api', plantsRouter);
