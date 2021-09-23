@@ -25,9 +25,9 @@ server.use(
   })
 );
 
-server.use(usersRouter);
-server.use(plantsRouter);
-server.use(speciesRouter);
+server.use('/api', usersRouter);
+server.use('/api', plantsRouter);
+server.use('/api', speciesRouter);
 
 server.use((err, req, res, next) => {
   console.log(err);
